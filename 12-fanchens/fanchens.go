@@ -14,13 +14,15 @@ func vals() (int, int) {
 	return 3, 7
 }
 
-func sum(numbs ...int) {
+func sum(numbs ...int) int {
 	fmt.Println(numbs)
 	total := 0
 	for _, numb := range numbs {
 		total += numb
 	}
 	fmt.Println(total)
+
+	return total
 }
 
 func main() {
